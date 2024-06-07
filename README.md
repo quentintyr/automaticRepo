@@ -1,6 +1,6 @@
 
 # Create automaticRepo
-This project allows the user to create a file called **<name>** or anything else. That created file allows the user to initialize a repository in an existing project. Adding a Readme File and then pushing it all to your personal GitHub Account to save time.
+This project allows the user to create a file called **<name>** or anything else. That created file allows the user to initialize a repository in an existing project. Adding a Readme File and then pushing it all to your personal GitHub Account with just one command.
 
 
 ## 🗿 Authors
