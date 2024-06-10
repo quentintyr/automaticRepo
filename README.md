@@ -70,7 +70,18 @@ chmod +x name
 ```
 to grant execution permission, by entering the command in git bash, where the file is saved.
 
-
+### Add the name file to git bash
+```
+nano ~/.bashrc
+```
+Then enter the following to the file:
+```
+export PATH=$PATH:(your/path/to/file)
+```
+Example:
+```
+export PATH=$PATH:/d/scripts
+```
 ## 🌐 Creating an SSH Key & Connection
 
 To generate an SSH key and add it to your GitHub account, follow these steps:
