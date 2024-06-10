@@ -1,6 +1,6 @@
 
 # Create automaticRepo (on hold)
-This project allows the user to create a file called **<name>** or anything else. That created file allows the user to initialize a repository in an existing project. Adding a Readme File and then pushing it all to your personal GitHub Account with just one command.
+This project allows the user to create a file called **name** or anything else. That created file allows the user to initialize a repository in an existing project. Adding a Readme File and then pushing it all to your personal GitHub Account with just one command.
 
 
 ## 🗿 Authors
@@ -160,6 +160,45 @@ Proceed to save the token.
 Copy the token and paste it in the file, where "YOUR-ACCESS-TOKEN" is.
 
 ![acccess_token](./images/access_token.png)
+
+
+## 🚩 Potential Issues
+There is a possibility that when running the command that it wont push the files on GitHub. That can happen when using company Networks. Port 22 is commonly used for SSH (Secure Shell) connections, which allow secure access to remote computers. Companies often block port 22 on their networks for several reasons:
+- Security Concerns
+
+- Policy Compliance
+
+- Data Leakage Prevention
+
+- Network Management
+
+If you need SSH access for your work, it's advisable to discuss this with your IT department. They might provide a secure alternative or grant access based on your requirements and compliance with security policies.
+
+For a workaround its possible to use Port 443, which is less likely to be blocked.
+
+# Possible Workaround
+Create a new file called config.
+Put the file in the following path:
+```
+C:\Users\YOUR_USERNAME\.ssh
+```
+![config](./images/config.png)
+
+Copy the following and paste it in the config file:
+```
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+  User git
+```
+After saving the File, run the following commands to test the connection:
+```
+chmod 600 ~/.ssh/id_rsa
+```
+```
+chmod 700 ~/.ssh
+```
+When nothing happens, everything is working properly. When encountering an Error please contact me.
 
 ## Usage
 After you've done the above steps, you can use the command name <reponame> to execute your script or as the following:
