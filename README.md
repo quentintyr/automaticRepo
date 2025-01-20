@@ -56,8 +56,8 @@ git commit -m "Initial commit"
 # Set the remote origin to the GitHub SSH URL
 git remote add origin "git@github.com:$github_username/$reponame.git"
 
-# Rename the default branch from master to main
-git branch -m master main
+# Switch to main branch
+git branch -M main
 
 # Push to GitHub, setting upstream to main
 git push -u origin main
