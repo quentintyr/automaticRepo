@@ -68,6 +68,11 @@ Make sure the script has execution permissions. If you're using Git Bash or a Un
 ```
 chmod +x name
 ```
+or
+```
+chmod +x x/example/path
+```
+
 to grant execution permission, by entering the command in git bash, where the file is saved.
 
 ### Add the name file to git bash
